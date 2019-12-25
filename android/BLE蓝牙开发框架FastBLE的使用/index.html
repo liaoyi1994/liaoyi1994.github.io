@@ -27,11 +27,14 @@
 <meta property="og:url" content="http:&#x2F;&#x2F;www.html.hb.com&#x2F;android&#x2F;BLE%E8%93%9D%E7%89%99%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6FastBLE%E7%9A%84%E4%BD%BF%E7%94%A8&#x2F;index.html">
 <meta property="og:site_name" content="我的博客">
 <meta property="og:description" content="首次使用android进行蓝牙BLE开发，在百度上查阅了大量资料，然后发现了FastBLE开源框架就决定试试，以下为在使用FastBLE开发的过程。首先遇到的问题是权限问题，照着 开发文档上的获取权限的步骤来做，却发现无法获取到权限。在百度上查询了一些获取权限的资料都比较复杂，所以使用了AndroidACP开源框架来获取权限，具体步骤如下：  在build.gradle文件下的dependenci">
+<meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2019-03-05T06:46:49.000Z">
-<meta property="article:modified_time" content="2019-12-25T07:46:21.777Z">
+<meta property="article:modified_time" content="2019-12-25T08:43:05.397Z">
 <meta property="article:author" content="廖义">
 <meta property="article:tag" content="Android">
 <meta name="twitter:card" content="summary">
+    
+        <link rel="alternate" type="application/atom+xml" title="我的博客" href="/atom.xml">
     
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
@@ -102,7 +105,7 @@
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
                 <i class="icon icon-lg icon-chevron-left"></i>
             </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
                 <i class="icon icon-lg icon-search"></i>
             </a>
@@ -189,7 +192,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2019-12-25T07:46:21.777Z" itemprop="dateUpdated">2019-12-25 15:46:21</time>
+    最后更新时间：<time datetime="2019-12-25T08:43:05.397Z" itemprop="dateUpdated">2019-12-25 16:43:05</time>
 </span><br>
 
 
@@ -273,7 +276,7 @@
 <nav class="post-nav flex-row flex-justify-between">
   
     <div class="waves-block waves-effect prev">
-      <a href="/nginx/Nginx%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F/" id="post-prev" class="post-nav-link">
+      <a href="/nginx/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F/" id="post-prev" class="post-nav-link">
         <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
         <h4 class="title">反向代理解决跨域</h4>
       </a>
@@ -362,7 +365,9 @@
 
         <p>
             
-            <span>This blog is licensed under a <a rel="license noopener" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>.</span>
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
         </p>
     </div>
     <div class="bottom">
@@ -420,7 +425,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://www.html.hb.com/android/BLE%E8%93%9D%E7%89%99%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6FastBLE%E7%9A%84%E4%BD%BF%E7%94%A8/" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASYAAAEmCAAAAADqr2IGAAAEgElEQVR42u3a0W7jMAwEwP7/T/deD7iLs0u6gJWOnwo3ka1RAIqkvr7i6/vFdf2Zf++3Y16/yd93rv/76vM3X5gwYcKE6ZFM35dX/vjr+69e8XrkfHqbT0YLhgkTJkyYDmdqH5xMY7YACWtOf/35/LmYMGHChOn3MG0Sy4Rsto3Ik2RMmDBhwoQpp5mF2019NS8r37swmDBhwoTpdKb9cHnLM9kotI3M2dL+SC0cEyZMmDA9jCkPyZ/3980XJkyYMGF6GNN3ee1bjPlmIiko7xPgaNaYMGHChOlYpjxA5iXd4sGLIm+eZueHhN7MFxMmTJgwHcvUHo7JC6b7zHHTOs2XpyhtY8KECROmo5jykJlw5Ch5wJ4lw3nBOloSTJgwYcJ0ONN+0PYQzD49zrcOycK/uY8JEyZMmA5nyr/QFlJnTcr2uxuOCBcTJkyYMH0o0yz5nJHlS5KXaG87+oMJEyZMmA5natPdNoFsG415o/SuI0Rvfi6YMGHChOnjmNpAm9dCZ6lsHuyLJmU+C0yYMGHCdCxTG/v2SenmQE8+8mzxCixMmDBhwnQU06bhl4TnNtVsCdpW63COmDBhwoTpQKZZaJ/R/FyCmm8Ihi1PTJgwYcJ0LFPbyGwPvuybi+2zNu3YCAgTJkyYMB3ItBk0P7KTp9DJOHnq2x7rGf6CMGHChAnTg5nawmh+HKcN+e0EZp9py76YMGHChOlcphalTRrzom2+DJtNQDuj4W8HEyZMmDA9himffHIQp51eXtjdp7JtEXn4G8GECRMmTI9k2pRQZxNug/EmSU7IksI3JkyYMGE6nWlWim1T3H3Z966mbD0mJkyYMGE6lqnNj5PGYTKBTZF3T5CfycGECRMmTKcz3VAbLlnzZDtPTfNS76rIiwkTJkyYjmWahcmEYPOiLVa+cVkd1sGECRMmTIcwbcJnXurdJ8zJyLM0OEqtMWHChAnThzJdv8rsiMymvJvc37dRo/IuJkyYMGE6iikJw7OwPWs9bt6qXYbob0yYMGHC9EFMbUCdFV736PszSkVijwkTJkyYPoJpE2Lbb22C+ibBTr71nxEwYcKECdOHMiVl3E3Bd1bezVPZtoT98imYMGHChOlYpuLwyui1ZmSzyezf4U3CjAkTJkyYjmXK08v24M6sBNyi3Fvq/covTJgwYcJ0LNOsgLsJurMGal6k/olkGxMmTJgwPZ9plv7NXmLfelytdrkkddcXEyZMmDA9nikPkPm0k/C/2QokfPvWLCZMmDBhOpdpX/RMwnkUdBdPaZPqduOCCRMmTJjOZfour/Zb+01APtpszOj4ESZMmDBhOpZpdi4lT3c3KfT+ubMjQZvyMSZMmDBheiZTPrFZ6fbeYzr7QnMCigkTJkyYPo9pUxtudx9t4XX2hsO9z6vnYsKECROmX8PUbhTyozab1uO+nflmOTFhwoQJ0y9juivctgXffFNyPXLdwsSECRMmTIcztYd12nFmW4G7DgNt7mDChAkTptOZZqlmW7rNU9NNIM9T32IrgAkTJkyYTmX6A8+flodS0PrxAAAAAElFTkSuQmCC" alt="微信分享二维码">
 </div>
 
 

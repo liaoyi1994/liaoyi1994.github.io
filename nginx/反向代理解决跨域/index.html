@@ -24,14 +24,17 @@
     <meta name="description" content="前段时间遇到一个前后端分离的项目，服务端代码在服务器上，而我不能直接把前端代码发布到服务器上。在调试时发现有跨域的问题，决定使用nginx反向代理来解决跨域问题。修改conf&#x2F;nginx.conf中的配置即可。修改后的配置如下： 1234567891011121314server &amp;#123;    listen       80;    server_name  localhost;    lo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="反向代理解决跨域">
-<meta property="og:url" content="http:&#x2F;&#x2F;www.html.hb.com&#x2F;nginx&#x2F;Nginx%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F&#x2F;index.html">
+<meta property="og:url" content="http:&#x2F;&#x2F;www.html.hb.com&#x2F;nginx&#x2F;%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F&#x2F;index.html">
 <meta property="og:site_name" content="我的博客">
 <meta property="og:description" content="前段时间遇到一个前后端分离的项目，服务端代码在服务器上，而我不能直接把前端代码发布到服务器上。在调试时发现有跨域的问题，决定使用nginx反向代理来解决跨域问题。修改conf&#x2F;nginx.conf中的配置即可。修改后的配置如下： 1234567891011121314server &amp;#123;    listen       80;    server_name  localhost;    lo">
+<meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2019-03-05T07:17:22.000Z">
-<meta property="article:modified_time" content="2019-12-25T07:46:22.753Z">
+<meta property="article:modified_time" content="2019-12-25T08:43:07.621Z">
 <meta property="article:author" content="廖义">
 <meta property="article:tag" content="Nginx">
 <meta name="twitter:card" content="summary">
+    
+        <link rel="alternate" type="application/atom+xml" title="我的博客" href="/atom.xml">
     
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
@@ -102,7 +105,7 @@
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
                 <i class="icon icon-lg icon-chevron-left"></i>
             </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
                 <i class="icon icon-lg icon-search"></i>
             </a>
@@ -139,7 +142,7 @@
 <div class="container body-wrap">
     
 
-<article id="post-Nginx反向代理解决跨域"
+<article id="post-反向代理解决跨域"
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
@@ -169,7 +172,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2019-12-25T07:46:22.753Z" itemprop="dateUpdated">2019-12-25 15:46:22</time>
+    最后更新时间：<time datetime="2019-12-25T08:43:07.621Z" itemprop="dateUpdated">2019-12-25 16:43:07</time>
 </span><br>
 
 
@@ -205,7 +208,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.html.hb.com/nginx/Nginx%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F/&title=《反向代理解决跨域》 — 我的博客&pic=http://www.html.hb.com/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.html.hb.com/nginx/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F/&title=《反向代理解决跨域》 — 我的博客&pic=http://www.html.hb.com/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -215,22 +218,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.html.hb.com/nginx/Nginx%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F/&title=《反向代理解决跨域》 — 我的博客&source=一生挚爱妹子 砥砺前行 不忘初心" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.html.hb.com/nginx/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F/&title=《反向代理解决跨域》 — 我的博客&source=一生挚爱妹子 砥砺前行 不忘初心" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.html.hb.com/nginx/Nginx%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.html.hb.com/nginx/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《反向代理解决跨域》 — 我的博客&url=http://www.html.hb.com/nginx/Nginx%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F/&via=http://www.html.hb.com" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《反向代理解决跨域》 — 我的博客&url=http://www.html.hb.com/nginx/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F/&via=http://www.html.hb.com" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://www.html.hb.com/nginx/Nginx%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://www.html.hb.com/nginx/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -335,7 +338,9 @@
 
         <p>
             
-            <span>This blog is licensed under a <a rel="license noopener" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>.</span>
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
         </p>
     </div>
     <div class="bottom">
@@ -357,7 +362,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.html.hb.com/nginx/Nginx%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F/&title=《反向代理解决跨域》 — 我的博客&pic=http://www.html.hb.com/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.html.hb.com/nginx/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F/&title=《反向代理解决跨域》 — 我的博客&pic=http://www.html.hb.com/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -367,22 +372,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.html.hb.com/nginx/Nginx%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F/&title=《反向代理解决跨域》 — 我的博客&source=一生挚爱妹子 砥砺前行 不忘初心" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.html.hb.com/nginx/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F/&title=《反向代理解决跨域》 — 我的博客&source=一生挚爱妹子 砥砺前行 不忘初心" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.html.hb.com/nginx/Nginx%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.html.hb.com/nginx/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《反向代理解决跨域》 — 我的博客&url=http://www.html.hb.com/nginx/Nginx%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F/&via=http://www.html.hb.com" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《反向代理解决跨域》 — 我的博客&url=http://www.html.hb.com/nginx/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F/&via=http://www.html.hb.com" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://www.html.hb.com/nginx/Nginx%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://www.html.hb.com/nginx/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -393,7 +398,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://www.html.hb.com/nginx/Nginx%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F/" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAADMUlEQVR42u3awY7iMBAEUP7/p2el1d5GQFXbrIjzchoNKPFzDkV3+/GIr5+/1+//PLt+f+fZ3fI7vF7D4xMXNjY29kXYOSBfdL5NyXqSNbTrwcbGxj6P/Tq0ZhE14+Xfeb01b4zY2NjYt2TvLU7yyJyFHDY2Njb2bLnRI18y8sIj+RQbGxv7Puy20V88IN7QZDuSzdrcS8PGxsb+enY76P3mvz8438bGxsb+SvZPeeUhNGs55WOD2fr/3Q0bGxv7IHbe+k/GuitxOBsSzF4ANjY29h3YeRGy3n7KAyyP0uh1YmNjYx/KbiMqj6I8rtr7tE/HxsbGPomdg3eNftdbUXnovplsY2NjYx/BTh7WHpRZCapks5L/RCJsbGzsI9j/J8DajVgZPEQlDTY2NvZB7JVh6iwt202cHe7ZMOjFxsbGvgg7+UHfHqnJW/xtM2hbZGJjY2MfxM6HBCukPGDaTWzLG2xsbOw7sGdxkg8Y2i1oBwxFWYKNjY19BHtWMNQ/+svxQ/sa6teDjY2NfRC7DZtdByiTmEm2YGVV2NjY2Gew26Z/3nhab1HNtiYJM2xsbOyT2HlTqS052gicRVReIBUnlbCxsbEvxW5bSLOCIS8ShvONtuDBxsbGvhk7bzbld1gZ5SaR9ub1YGNjYx/Ezg/TrIwT2nBaqRfaNWNjY2NfnZ3HRlswzAbAK02uvI2FjY2NfR579uM+X9bK8Dj/TlKKYGNjY5/Kfv2jvy0wVrZspY2VD4yxsbGxT2KvFA8rh2mSp+cNpuGmY2NjYx/Bbgelebs/P+7TblZeijz9DzY2NvZB7DxC2uIhb1TlR3Pa8ubNlmFjY2MfwZ41lfIjm7tCMT9MGZVV2NjY2Mex8y1YH762Mdk2mIrExsbGxj6InV+fKzPyGGtD6818GxsbG/vi7JXYaJHtIKEdP88+xcbGxj6DnS86uXW+x3nY5J8ma8PGxsY+lZ0vKw+zNupWNrpuP2FjY2Pfkt2OBPIB8Gww3N4BGxsbG7v9zq7DPbPG0+YAw8bGxv56dtvcbxe33mCaBdiG8QA2Njb217N3DXrzpJiVKElYzl4PNjY29mXZfwBqjBxfFy2v1gAAAABJRU5ErkJggg==" alt="微信分享二维码">
 </div>
 
 
