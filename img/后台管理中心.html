@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)https://feasycom.com/admin/index.aspx -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>后台管理中心</title>
+<link href="./后台管理中心_files/ui-dialog.css" rel="stylesheet" type="text/css">
+<link href="./后台管理中心_files/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" charset="utf-8" src="./后台管理中心_files/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="./后台管理中心_files/jquery.nicescroll.js"></script>
+<script type="text/javascript" charset="utf-8" src="./后台管理中心_files/dialog-plus-min.js"></script>
+<script type="text/javascript" charset="utf-8" src="./后台管理中心_files/layindex.js"></script>
+<script type="text/javascript" charset="utf-8" src="./后台管理中心_files/common.js"></script>
+<script type="text/javascript">
+//页面加载完成时
+$(function () {
+    //检测IE
+    if ('undefined' == typeof(document.body.style.maxHeight)){
+        window.location.href = 'ie6update.html';
+    }
+});
+</script>
+<meta name="generator" content="Hexo 4.1.1"></head>
+
+<body class="indexbody">
+<form method="post" action="https://feasycom.com/admin/index.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTEwNzkxNjgxMzhkZLO3XhpKj1SC4GFMs5kood5Hq5Yjru0dg19+BC1GZvDE">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="884935BA">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAK/dvCLGq57/5UgOtCIZ29/5cAl+B8NpP7aYmtMOUT8hUa8TBu1c7P7RhdFKjlG3Kn38Lch1ehn6MD6VdCADzJv">
+</div>
+  <!--全局菜单-->
+  <a class="btn-paograms" onclick="togglePopMenu();"></a>
+  <div id="pop-menu" class="pop-menu">
+    <div class="pop-box" style="width: 365.986px;">
+      <h1 class="title"><i></i>导航菜单</h1>
+      <i class="close" onclick="togglePopMenu();">关闭</i>
+      <div class="list-box"><div class="list-group">
+<h1 title="站点"><img src="./后台管理中心_files/home.png"></h1>
+<div class="list-wrap">
+<h2>站点管理<i></i></h2>
+<ul>
+<li>
+<a navid="channel_main" target="mainframe" class="nolink">
+<span>中文版</span>
+</a>
+<ul>
+<li>
+<a navid="channel_goods" target="mainframe" class="nolink">
+<span>产品中心</span>
+</a>
+<ul>
+<li>
+<a navid="channel_goods_list" target="mainframe" class="link">
+<span>内容管理</span>
+</a>
+</li>
+<li>
+<a navid="channel_goods_category" target="mainframe" class="link">
+<span>栏目类别</span>
+</a>
+</li>
+<li>
+<a navid="channel_goods_comment" target="mainframe" class="link">
+<span>评论管理</span>
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a navid="channel_photo" target="mainframe" class="nolink">
+<span>方案展示</span>
+</a>
+<ul>
+<li>
+<a navid="channel_photo_list" target="mainframe" class="link">
+<span>内容管理</span>
+</a>
+</li>
+<li>
+<a navid="channel_photo_category" target="mainframe" class="link">
+<span>栏目类别</span>
+</a>
+</li>
+<li>
+<a navid="channel_photo_comment" target="mainframe" class="link">
+<span>评论管理</span>
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a navid="channel_down" target="mainframe" class="nolink">
+<span>技术支持</span>
+</a>
+<ul>
+<li>
+<a navid="channel_down_list" target="mainframe" class="link">
+<span>内容管理</span>
+</a>
+</li>
+<li>
+<a navid="channel_down_category" target="mainframe" class="link">
+<span>栏目类别</span>
+</a>
+</li>
+<li>
+<a navid="channel_down_comment" target="mainframe" class="link">
+<span>评论管理</span>
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a navid="channel_news" target="mainframe" class="nolink">
+<span>新闻中心</span>
+</a>
+<ul>
+<li>
+<a navid="channel_news_list" target="mainframe" class="link">
+<span>内容管理</span>
+</a>
+</li>
+<li>
+<a navid="channel_news_category" target="mainframe" class="link">
+<span>栏目类别</span>
+</a>
+</li>
+<li>
+<a navid="channel_news_comment" target="mainframe" class="link">
+<span>评论管理</span>
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a navid="channel_about" target="mainframe" class="nolink">
+<span>关于我们</span>
+</a>
+<ul>
+<li>
+<a navid="channel_about_list" target="mainframe" class="link">
+<span>内容管理</span>
+</a>
+</li>
+<li>
+<a navid="channel_about_category" target="mainframe" class="link">
+<span>栏目类别</span>
+</a>
+</li>
+<li>
+<a navid="channel_about_comment" target="mainframe" class="link">
+<span>评论管理</span>
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a navid="channel_video" target="mainframe" class="nolink">
+<span>演示视频</span>
+</a>
+<ul>
+<li>
+<a navid="channel_video_list" target="mainframe" class="link">
+<span>内容管理</span>
+</a>
+</li>
+<li>
+<a navid="channel_video_category" target="mainframe" class="link">
+<span>栏目类别</span>
+</a>
+</li>
+<li>
+<a navid="channel_video_comment" target="mainframe" class="link">
+<span>评论管理</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a navid="channel_en" target="mainframe" class="nolink">
+<span>英文站</span>
+</a>
+<ul>
+<li>
+<a navid="channel_product" target="mainframe" class="nolink">
+<span>产品中心</span>
+</a>
+<ul>
+<li>
+<a navid="channel_product_list" target="mainframe" class="link">
+<span>内容管理</span>
+</a>
+</li>
+<li>
+<a navid="channel_product_category" target="mainframe" class="link">
+<span>栏目类别</span>
+</a>
+</li>
+<li>
+<a navid="channel_product_comment" target="mainframe" class="link">
+<span>评论管理</span>
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a navid="channel_case" target="mainframe" class="nolink">
+<span>方案展示</span>
+</a>
+<ul>
+<li>
+<a navid="channel_case_list" target="mainframe" class="link">
+<span>内容管理</span>
+</a>
+</li>
+<li>
+<a navid="channel_case_category" target="mainframe" class="link">
+<span>栏目类别</span>
+</a>
+</li>
+<li>
+<a navid="channel_case_comment" target="mainframe" class="link">
+<span>评论管理</span>
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a navid="channel_service" target="mainframe" class="nolink">
+<span>技术支持</span>
+</a>
+<ul>
+<li>
+<a navid="channel_service_list" target="mainframe" class="link">
+<span>内容管理</span>
+</a>
+</li>
+<li>
+<a navid="channel_service_category" target="mainframe" class="link">
+<span>栏目类别</span>
+</a>
+</li>
+<li>
+<a navid="channel_service_comment" target="mainframe" class="link">
+<span>评论管理</span>
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a navid="channel_xwzx" target="mainframe" class="nolink">
+<span>新闻中心</span>
+</a>
+<ul>
+<li>
+<a navid="channel_xwzx_list" target="mainframe" class="link">
+<span>内容管理</span>
+</a>
+</li>
+<li>
+<a navid="channel_xwzx_category" target="mainframe" class="link">
+<span>栏目类别</span>
+</a>
+</li>
+<li>
+<a navid="channel_xwzx_comment" target="mainframe" class="link">
+<span>评论管理</span>
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a navid="channel_gywm" target="mainframe" class="nolink">
+<span>关于我们</span>
+</a>
+<ul>
+<li>
+<a navid="channel_gywm_list" target="mainframe" class="link">
+<span>内容管理</span>
+</a>
+</li>
+<li>
+<a navid="channel_gywm_category" target="mainframe" class="link">
+<span>栏目类别</span>
+</a>
+</li>
+<li>
+<a navid="channel_gywm_comment" target="mainframe" class="link">
+<span>评论管理</span>
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a navid="channel_shipin" target="mainframe" class="nolink">
+<span>演示视频</span>
+</a>
+<ul>
+<li>
+<a navid="channel_shipin_list" target="mainframe" class="link">
+<span>内容管理</span>
+</a>
+</li>
+<li>
+<a navid="channel_shipin_category" target="mainframe" class="link">
+<span>栏目类别</span>
+</a>
+</li>
+<li>
+<a navid="channel_shipin_comment" target="mainframe" class="link">
+<span>评论管理</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="list-group">
+<h1 title="应用"><img src="./后台管理中心_files/pus.png"></h1>
+<div class="list-wrap">
+<h2>应用管理<i></i></h2>
+<ul>
+<li>
+<a navid="sys_plugin_manage" target="mainframe" class="nolink">
+<span>插件管理</span>
+</a>
+<ul>
+<li>
+<a navid="plugin_link" target="mainframe" class="link">
+<span>链接管理</span>
+</a>
+</li>
+<li>
+<a navid="sampleen" target="mainframe" class="link">
+<span>样品申请英文</span>
+</a>
+</li>
+<li>
+<a navid="sample" target="mainframe" class="link">
+<span>样品申请</span>
+</a>
+</li>
+<li>
+<a navid="feedbacken" target="mainframe" class="link">
+<span>定制申请英文</span>
+</a>
+</li>
+<li>
+<a navid="guestbooken" target="mainframe" class="link">
+<span>英文留言</span>
+</a>
+</li>
+<li>
+<a navid="contact_list" target="mainframe" class="link">
+<span>访问统计</span>
+</a>
+</li>
+<li>
+<a navid="feedback" target="mainframe" class="link">
+<span>定制申请</span>
+</a>
+</li>
+<li>
+<a navid="guestbook" target="mainframe" class="link">
+<span>中文留言</span>
+</a>
+</li>
+<li>
+<a navid="banner" target="mainframe" class="link">
+<span>广告管理</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="list-group">
+<h1 title="控制面板"><img src="./后台管理中心_files/sys.png"></h1>
+<div class="list-wrap">
+<h2>控制面板<i></i></h2>
+<ul>
+<li>
+<a navid="sys_settings" target="mainframe" class="nolink">
+<span>系统管理</span>
+</a>
+<ul>
+<li>
+<a navid="sys_config" target="mainframe" class="link">
+<span>系统设置</span>
+</a>
+</li>
+<li>
+<a navid="sys_url_rewrite" target="mainframe" class="link">
+<span>URL配置</span>
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a navid="sys_site_settings" target="mainframe" class="nolink">
+<span>站点设置</span>
+</a>
+<ul>
+<li>
+<a navid="sys_site_manage" target="mainframe" class="link">
+<span>站点管理</span>
+</a>
+</li>
+<li>
+<a navid="sys_channel_manage" target="mainframe" class="link">
+<span>频道管理</span>
+</a>
+</li>
+<li>
+<a navid="sys_channel_field" target="mainframe" class="link">
+<span>扩展字段</span>
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a navid="sys_design" target="mainframe" class="nolink">
+<span>界面管理</span>
+</a>
+<ul>
+<li>
+<a navid="sys_site_templet" target="mainframe" class="link">
+<span>站点模板管理</span>
+</a>
+</li>
+<li>
+<a navid="sys_builder_html" target="mainframe" class="link">
+<span>生成静态管理</span>
+</a>
+</li>
+<li>
+<a navid="sys_navigation" target="mainframe" class="link">
+<span>后台导航管理</span>
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a navid="sys_manager" target="mainframe" class="nolink">
+<span>系统用户</span>
+</a>
+<ul>
+<li>
+<a navid="manager_list" target="mainframe" class="link">
+<span>管理员管理</span>
+</a>
+</li>
+<li>
+<a navid="manager_role" target="mainframe" class="link">
+<span>角色管理</span>
+</a>
+</li>
+<li>
+<a navid="manager_log" target="mainframe" class="link">
+<span>管理日志</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+    </div>
+    <i class="arrow">箭头</i>
+  </div>
+  <!--/全局菜单-->
+
+  <div class="main-top">
+    <a class="icon-menu"></a>
+    <div id="main-nav" class="main-nav"><a class="">站点</a><a>应用</a><a class="selected">控制面板</a></div>
+    <div class="nav-right">
+      <div class="info">
+        <i></i>
+        <span>
+          您好，feasycom2018<br>
+          超级管理组
+        </span>
+      </div>
+      <div class="option">
+        <i></i>
+        <div class="drop-wrap">
+          <div class="arrow"></div>
+          <ul class="item">
+            <li>
+              <a href="https://feasycom.com/" target="_blank">预览网站</a>
+            </li>
+            <li>
+              <a href="https://feasycom.com/admin/center.aspx" target="mainframe">管理中心</a>
+            </li>
+            <li>
+              <a href="https://feasycom.com/admin/manager/manager_pwd.aspx" onclick="linkMenuTree(false, &#39;&#39;);" target="mainframe">修改密码</a>
+            </li>
+            <li>
+              <a id="lbtnExit" href="javascript:__doPostBack(&#39;lbtnExit&#39;,&#39;&#39;)">注销登录</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="main-left">
+    <h1 class="logo"></h1>
+    <div id="sidebar-nav" class="sidebar-nav"><div class="list-group" style="display: none;">
+<h1 title="站点"><img src="./后台管理中心_files/home.png"></h1>
+<div class="list-wrap">
+<h2>站点管理<i></i></h2>
+<ul style="display: block;">
+<li>
+<a navid="channel_main" target="mainframe">
+<i class="icon folder"></i><span>中文版</span>
+<b class="expandable open"></b></a>
+<ul style="display: block;">
+<li>
+<a navid="channel_goods" target="mainframe">
+<i class="icon"></i><i class="icon folder"></i><span>产品中心</span>
+<b class="expandable close"></b></a>
+<ul style="display: none;">
+<li>
+<a navid="channel_goods_list" href="https://feasycom.com/admin/article/article_list.aspx?channel_id=7" target="mainframe">
+<i class="icon"></i><i class="icon"></i><i class="icon file"></i><span>内容管理</span>
+</a>
+</li>
+<li>
+<a navid="channel_goods_category" href="https://feasycom.com/admin/article/category_list.aspx?channel_id=7" target="mainframe">
+<i class="icon"></i><i class="icon"></i><i class="icon file"></i><span>栏目类别</span>
+</a>
+</li>
+<li>
+<a navid="channel_goods_comment" href="https://feasycom.com/admin/article/comment_list.aspx?channel_id=7" target="mainframe">
+<i class="icon"></i><i class="icon"></i><i class="icon file"></i><span>评论管理</span>
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a navid="channel_photo" target="mainframe">
+<i class="icon"></i><i class="icon folder"></i><span>方案展示</span>
+<b class="expandable close"></b></a>
+<ul style="display: none;">
+<li>
+<a navid="channel_photo_list" href="https://feasycom.com/admin/article/article_list.aspx?channel_id=15" target="mainframe">
+<i class="icon"></i><i class="icon"></i><i class="icon file"></i><span>内容管理</span>
+</a>
+</li>
+<li>
+<a navid="channel_photo_category" href="https://feasycom.com/admin/article/category_list.aspx?channel_id=15" target="mainframe">
+<i class="icon"></i><i class="icon"></i><i class="icon file"></i><span>栏目类别</span>
+</a>
+</li>
+<li>
+<a navid="channel_photo_comment" href="https://feasycom.com/admin/article/comment_list.aspx?channel_id=15" target="mainframe">
+<i class="icon"></i><i class="icon"></i><i class="icon file"></i><span>评论管理</span>
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a navid="channel_down" target="mainframe">
+<i class="icon"></i><i class="icon folder"></i><span>技术支持</span>
+<b class="expandable close"></b></a>
+<ul style="display: none;">
+<li>
+<a navid="channel_down_list" href="https://feasycom.com/admin/article/article_list.aspx?channel_id=14" target="mainframe">
+<i class="icon"></i><i class="icon"></i><i class="icon file"></i><span>内容管理</span>
+</a>
+</li>
+<li>
+<a navid="channel_down_category" href="https://feasycom.com/admin/article/category_list.aspx?channel_id=14" target="mainframe">
+<i class="icon"></i><i class="icon"></i><i class="icon file"></i><span>栏目类别</span>
+</a>
+</li>
+<li>
+<a navid="channel_down_comment" href="https://feasycom.com/admin/article/comment_list.aspx?channel_id=14" target="mainframe">
+<i class="icon"></i><i class="icon"></i><i class="icon file"></i><span>评论管理</span>
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a navid="channel_news" target="mainframe">
+<i class="icon"></i><i class="icon folder"></i><span>新闻中心</span>
+<b class="expandable close"></b></a>
+<ul style="display: none;">
+<li>
+<a navid="channel_news_list" href="https://feasycom.com/admin/article/article_list.aspx?channel_id=21" target="mainframe">
+<i class="icon"></i><i class="icon"></i><i class="icon file"></i><span>内容管理</span>
+</a>
+</li>
+<li>
+<a navid="channel_news_category" href="https://feasycom.com/admin/article/category_list.aspx?channel_id=21" target="mainframe">
+<i class="icon"></i><i class="icon"></i><i class="icon file"></i><span>栏目类别</span>
+</a>
+</li>
+<li>
+<a navid="channel_news_comment" href="https://feasycom.com/admin/article/comment_list.aspx?channel_id=21" target="mainframe">
+<i class="icon"></i><i class="icon"></i><i class="icon file"></i><span>评论管理</span>
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a navid="channel_about" target="mainframe">
+<i class="icon"></i><i class="icon folder"></i><span>关于我们</span>
+<b class="expandable close"></b></a>
+<ul style="display: none;">
+<li>
+<a navid="channel_about_list" href="https://feasycom.com/admin/article/article_list.aspx?channel_id=12" target="mainframe">
+<i class="icon"></i><i class="icon"></i><i class="icon file"></i><span>内容管理</span>
+</a>
+</li>
+<li>
+<a navid="channel_about_category" href="https://feasycom.com/admin/article/category_list.aspx?channel_id=12" target="mainframe">
+<i class="icon"></i><i class="icon"></i><i class="icon file"></i><span>栏目类别</span>
+</a>
+</li>
+<li>
+<a navid="channel_about_comment" href="https://feasycom.com/admin/article/comment_list.aspx?channel_id=12" target="mainframe">
+<i class="icon"></i><i class="icon"></i><i class="icon file"></i><span>评论管理</span>
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a navid="channel_video" target="mainframe">
+<i class="icon"></i><i class="icon folder"></i><span>演示视频</span>
+<b class="expandable close"></b></a>
+<ul style="display: none;">
+<li>
+<a navid="channel_video_list" href="https://feasycom.com/admin/article/article_list.aspx?channel_id=29" target="mainframe">
+<i class="icon"></i><i class="icon"></i><i class="icon file"></i><span>内容管理</span>
+</a>
+</li>
+<li>
+<a navid="channel_video_category" href="https://feasycom.com/admin/article/category_list.aspx?channel_id=29" target="mainframe">
+<i class="icon"></i><i class="icon"></i><i class="icon file"></i><span>栏目类别</span>
+</a>
+</li>
+<li>
+<a navid="channel_video_comment" href="https://feasycom.com/admin/article/comment_list.aspx?channel_id=29" target="mainframe">
+<i class="icon"></i><i class="icon"></i><i class="icon file"></i><span>评论管理</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a navid="channel_en" target="mainframe">
+<i class="icon folder"></i><span>英文站</span>
+<b class="expandable close"></b></a>
+<ul style="display: none;">
+<li>
+<a navid="channel_product" target="mainframe">
+<i class="icon"></i><i class="icon folder"></i><span>产品中心</span>
+<b class="expandable close"></b></a>
+<ul style="display: none;">
+<li>
+<a navid="channel_product_list" href="https://feasycom.com/admin/article/article_list.aspx?channel_id=30" target="mainframe">
+<i class="icon"></i><i class="icon"></i><i class="icon file"></i><span>内容管理</span>
+</a>
+</li>
+<li>
+<a navid="channel_product_category" href="https://feasycom.com/admin/article/category_list.aspx?channel_id=30" target="mainframe">
+<i class="icon"></i><i class="icon"></i><i class="icon file"></i><span>栏目类别</span>
+</a>
+</li>
+<li>
+<a navid="channel_product_comment" href="https://feasycom.com/admin/article/comment_list.aspx?channel_id=30" target="mainframe">
+<i class="icon"></i><i class="icon"></i><i class="icon file"></i><span>评论管理</span>
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a navid="channel_case" target="mainframe">
+<i class="icon"></i><i class="icon folder"></i><span>方案展示</span>
+<b class="expandable close"></b></a>
+<ul style="display: none;">
+<li>
+<a navid="channel_case_list" href="https://feasycom.com/admin/article/article_list.aspx?channel_id=31" target="mainframe">
+<i class="icon"></i><i class="icon"></i><i class="icon file"></i><span>内容管理</span>
+</a>
+</li>
+<li>
+<a navid="channel_case_category" href="https://feasycom.com/admin/article/category_list.aspx?channel_id=31" target="mainframe">
+<i class="icon"></i><i class="icon"></i><i class="icon file"></i><span>栏目类别</span>
+</a>
+</li>
+<li>
+<a navid="channel_case_comment" href="https://feasycom.com/admin/article/comment_list.aspx?channel_id=31" target="mainframe">
+<i class="icon"></i><i class="icon"></i><i class="icon file"></i><span>评论管理</span>
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a navid="channel_service" target="mainframe">
+<i class="icon"></i><i class="icon folder"></i><span>技术支持</span>
+<b class="expandable close"></b></a>
+<ul style="display: none;">
+<li>
+<a navid="channel_service_list" href="https://feasycom.com/admin/article/article_list.aspx?channel_id=32" target="mainframe">
+<i class="icon"></i><i class="icon"></i><i class="icon file"></i><span>内容管理</span>
+</a>
+</li>
+<li>
+<a navid="channel_service_category" href="https://feasycom.com/admin/article/category_list.aspx?channel_id=32" target="mainframe">
+<i class="icon"></i><i class="icon"></i><i class="icon file"></i><span>栏目类别</span>
+</a>
+</li>
+<li>
+<a navid="channel_service_comment" href="https://feasycom.com/admin/article/comment_list.aspx?channel_id=32" target="mainframe">
+<i class="icon"></i><i class="icon"></i><i class="icon file"></i><span>评论管理</span>
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a navid="channel_xwzx" target="mainframe">
+<i class="icon"></i><i class="icon folder"></i><span>新闻中心</span>
+<b class="expandable close"></b></a>
+<ul style="display: none;">
+<li>
+<a navid="channel_xwzx_list" href="https://feasycom.com/admin/article/article_list.aspx?channel_id=33" target="mainframe">
+<i class="icon"></i><i class="icon"></i><i class="icon file"></i><span>内容管理</span>
+</a>
+</li>
+<li>
+<a navid="channel_xwzx_category" href="https://feasycom.com/admin/article/category_list.aspx?channel_id=33" target="mainframe">
+<i class="icon"></i><i class="icon"></i><i class="icon file"></i><span>栏目类别</span>
+</a>
+</li>
+<li>
+<a navid="channel_xwzx_comment" href="https://feasycom.com/admin/article/comment_list.aspx?channel_id=33" target="mainframe">
+<i class="icon"></i><i class="icon"></i><i class="icon file"></i><span>评论管理</span>
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a navid="channel_gywm" target="mainframe">
+<i class="icon"></i><i class="icon folder"></i><span>关于我们</span>
+<b class="expandable close"></b></a>
+<ul style="display: none;">
+<li>
+<a navid="channel_gywm_list" href="https://feasycom.com/admin/article/article_list.aspx?channel_id=34" target="mainframe">
+<i class="icon"></i><i class="icon"></i><i class="icon file"></i><span>内容管理</span>
+</a>
+</li>
+<li>
+<a navid="channel_gywm_category" href="https://feasycom.com/admin/article/category_list.aspx?channel_id=34" target="mainframe">
+<i class="icon"></i><i class="icon"></i><i class="icon file"></i><span>栏目类别</span>
+</a>
+</li>
+<li>
+<a navid="channel_gywm_comment" href="https://feasycom.com/admin/article/comment_list.aspx?channel_id=34" target="mainframe">
+<i class="icon"></i><i class="icon"></i><i class="icon file"></i><span>评论管理</span>
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a navid="channel_shipin" target="mainframe">
+<i class="icon"></i><i class="icon folder"></i><span>演示视频</span>
+<b class="expandable close"></b></a>
+<ul style="display: none;">
+<li>
+<a navid="channel_shipin_list" href="https://feasycom.com/admin/article/article_list.aspx?channel_id=35" target="mainframe">
+<i class="icon"></i><i class="icon"></i><i class="icon file"></i><span>内容管理</span>
+</a>
+</li>
+<li>
+<a navid="channel_shipin_category" href="https://feasycom.com/admin/article/category_list.aspx?channel_id=35" target="mainframe">
+<i class="icon"></i><i class="icon"></i><i class="icon file"></i><span>栏目类别</span>
+</a>
+</li>
+<li>
+<a navid="channel_shipin_comment" href="https://feasycom.com/admin/article/comment_list.aspx?channel_id=35" target="mainframe">
+<i class="icon"></i><i class="icon"></i><i class="icon file"></i><span>评论管理</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="list-group" style="display: none;">
+<h1 title="应用"><img src="./后台管理中心_files/pus.png"></h1>
+<div class="list-wrap">
+<h2>应用管理<i></i></h2>
+<ul style="display: block;">
+<li>
+<a navid="sys_plugin_manage" target="mainframe">
+<i class="icon folder"></i><span>插件管理</span>
+<b class="expandable open"></b></a>
+<ul style="display: block;">
+<li>
+<a navid="plugin_link" href="https://feasycom.com/plugins/link/admin/index.aspx" target="mainframe">
+<i class="icon"></i><i class="icon file"></i><span>链接管理</span>
+</a>
+</li>
+<li>
+<a navid="sampleen" href="https://feasycom.com/admin/sampleen/list.aspx" target="mainframe">
+<i class="icon"></i><i class="icon file"></i><span>样品申请英文</span>
+</a>
+</li>
+<li>
+<a navid="sample" href="https://feasycom.com/admin/sample/list.aspx" target="mainframe">
+<i class="icon"></i><i class="icon file"></i><span>样品申请</span>
+</a>
+</li>
+<li>
+<a navid="feedbacken" href="https://feasycom.com/admin/feedbacken/list.aspx" target="mainframe">
+<i class="icon"></i><i class="icon file"></i><span>定制申请英文</span>
+</a>
+</li>
+<li>
+<a navid="guestbooken" href="https://feasycom.com/admin/guestbooken/list.aspx" target="mainframe">
+<i class="icon"></i><i class="icon file"></i><span>英文留言</span>
+</a>
+</li>
+<li>
+<a navid="contact_list" href="http://new.cnzz.com/v1/login.php?siteid=1262267107" target="mainframe">
+<i class="icon"></i><i class="icon file"></i><span>访问统计</span>
+</a>
+</li>
+<li>
+<a navid="feedback" href="https://feasycom.com/admin/feedback/list.aspx" target="mainframe">
+<i class="icon"></i><i class="icon file"></i><span>定制申请</span>
+</a>
+</li>
+<li>
+<a navid="guestbook" href="https://feasycom.com/admin/guestbook/list.aspx" target="mainframe">
+<i class="icon"></i><i class="icon file"></i><span>中文留言</span>
+</a>
+</li>
+<li>
+<a navid="banner" href="https://feasycom.com/admin/banner/list.aspx" target="mainframe">
+<i class="icon"></i><i class="icon file"></i><span>广告管理</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="list-group selected" style="display: block;">
+<h1 title="控制面板"><img src="./后台管理中心_files/sys.png"></h1>
+<div class="list-wrap">
+<h2>控制面板<i></i></h2>
+<ul style="display: block;">
+<li>
+<a navid="sys_settings" target="mainframe">
+<i class="icon folder"></i><span>系统管理</span>
+<b class="expandable close"></b></a>
+<ul style="display: none;">
+<li>
+<a navid="sys_config" href="https://feasycom.com/admin/settings/sys_config.aspx" target="mainframe">
+<i class="icon"></i><i class="icon file"></i><span>系统设置</span>
+</a>
+</li>
+<li>
+<a navid="sys_url_rewrite" href="https://feasycom.com/admin/settings/url_rewrite_list.aspx" target="mainframe" class="">
+<i class="icon"></i><i class="icon file"></i><span>URL配置</span>
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a navid="sys_site_settings" target="mainframe">
+<i class="icon folder"></i><span>站点设置</span>
+<b class="expandable close"></b></a>
+<ul style="display: none;">
+<li>
+<a navid="sys_site_manage" href="https://feasycom.com/admin/channel/site_list.aspx" target="mainframe">
+<i class="icon"></i><i class="icon file"></i><span>站点管理</span>
+</a>
+</li>
+<li>
+<a navid="sys_channel_manage" href="https://feasycom.com/admin/channel/channel_list.aspx" target="mainframe">
+<i class="icon"></i><i class="icon file"></i><span>频道管理</span>
+</a>
+</li>
+<li>
+<a navid="sys_channel_field" href="https://feasycom.com/admin/channel/attribute_field_list.aspx" target="mainframe">
+<i class="icon"></i><i class="icon file"></i><span>扩展字段</span>
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a navid="sys_design" target="mainframe">
+<i class="icon folder"></i><span>界面管理</span>
+<b class="expandable open"></b></a>
+<ul style="display: block;">
+<li>
+<a navid="sys_site_templet" href="https://feasycom.com/admin/settings/templet_list.aspx" target="mainframe" class="selected">
+<i class="icon"></i><i class="icon file"></i><span>站点模板管理</span>
+</a>
+</li>
+<li>
+<a navid="sys_builder_html" href="https://feasycom.com/admin/settings/builder_html.aspx" target="mainframe">
+<i class="icon"></i><i class="icon file"></i><span>生成静态管理</span>
+</a>
+</li>
+<li>
+<a navid="sys_navigation" href="https://feasycom.com/admin/settings/nav_list.aspx" target="mainframe">
+<i class="icon"></i><i class="icon file"></i><span>后台导航管理</span>
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a navid="sys_manager" target="mainframe">
+<i class="icon folder"></i><span>系统用户</span>
+<b class="expandable close"></b></a>
+<ul style="display: none;">
+<li>
+<a navid="manager_list" href="https://feasycom.com/admin/manager/manager_list.aspx" target="mainframe">
+<i class="icon"></i><i class="icon file"></i><span>管理员管理</span>
+</a>
+</li>
+<li>
+<a navid="manager_role" href="https://feasycom.com/admin/manager/role_list.aspx" target="mainframe">
+<i class="icon"></i><i class="icon file"></i><span>角色管理</span>
+</a>
+</li>
+<li>
+<a navid="manager_log" href="https://feasycom.com/admin/manager/manager_log.aspx" target="mainframe">
+<i class="icon"></i><i class="icon file"></i><span>管理日志</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+  </div>
+  
+  <div class="main-container">
+    <iframe id="mainframe" name="mainframe" frameborder="0" src="./后台管理中心_files/center.html"></iframe>
+  </div>
+
+</form>
+
+
+</body></html>
