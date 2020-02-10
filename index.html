@@ -1,453 +1,155 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    
-
-    
-
-    
-
-
-
-    <meta charset="utf-8">
-    
-    
-    
-    
-    <title>我的博客 | 一生挚爱妹子</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    
-    <meta name="theme-color" content="#3F51B5">
-    
-    
-    <meta name="keywords" content="blogs,博客,个人博客,Android开发">
-    <meta name="description" content="一生挚爱妹子 砥砺前行 不忘初心">
-<meta property="og:type" content="website">
-<meta property="og:title" content="我的博客">
-<meta property="og:url" content="http:&#x2F;&#x2F;www.html.hb.com&#x2F;index.html">
-<meta property="og:site_name" content="我的博客">
-<meta property="og:description" content="一生挚爱妹子 砥砺前行 不忘初心">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:author" content="廖义">
-<meta property="article:tag" content="blogs">
-<meta property="article:tag" content="博客">
-<meta property="article:tag" content="个人博客">
-<meta property="article:tag" content="Android开发">
-<meta name="twitter:card" content="summary">
-    
-        <link rel="alternate" type="application/atom+xml" title="我的博客" href="/atom.xml">
-    
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
-    <script>window.lazyScripts=[]</script>
-
-    <!-- custom head -->
-    
-
-<meta name="generator" content="Hexo 4.1.1"></head>
-
+	<meta charset="UTF-8">
+	<title>郑宝娟-我爱你</title>
+	<style>
+		*{margin: 0;padding: 0;}
+		html,body{height: 100%;}
+		body{
+			overflow: hidden;
+			display: flex;
+			background: #FFC0CB;
+			perspective: 1000px;
+			transform-style: preserve-3d; 
+		}
+		#box{
+			position: relative;
+			display: flex;
+			width: 130px;
+			height: 200px;
+			margin: auto;
+			transform-style: preserve-3d; 
+			transform: rotateX(-10deg);
+		}
+		#box > div{
+			transform-style: preserve-3d; 
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			line-height: 200px;
+			font-size: 50px;
+			text-align: center;
+			box-shadow:0 0 10px #fff;
+			-webkit-box-reflect:below 10px -webkit-linear-gradient(top,rgba(0,0,0,0) 40%,rgba(0,0,0,.8) 100%);
+		}
+		/*  #box > div:nth-child(1){
+					background: skyblue;
+					transform: translate3d(0,0,300px) rotateY(45deg);
+				}
+				#box > div:nth-child(2){
+					background: pink;
+					transform: rotateY(0deg);
+				}
+				#box > div:nth-child(3){
+					background: purple;
+					transform: translate3d(0,0,300px) rotateY(-45deg);
+				} 
+		*/
+		#box p{
+			position: absolute;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			margin: auto;
+			width: 1200px;
+			height: 1200px;
+			background: -webkit-radial-gradient(center center,600px 600px,rgba(50,50,50,1),rgba(0,0,0,0));
+			border-radius: 50%;
+			transform: rotateX(90deg) translate3d(-600px,0,-105px);
+		}
+	</style>
+</head>
 <body>
-    <div id="loading" class="active"></div>
-
-    <aside id="menu"  >
-  <div class="inner flex-row-vertical">
-    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
-        <i class="icon icon-lg icon-close"></i>
-    </a>
-    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
-      <div class="brand">
-        <a href="/" class="avatar waves-effect waves-circle waves-light">
-          <img src="/img/avatar.jpg">
-        </a>
-        <hgroup class="introduce">
-          <h5 class="nickname">廖义</h5>
-          <a href="mailto:ly_hubei@outlook.com" title="ly_hubei@outlook.com" class="mail">ly_hubei@outlook.com</a>
-        </hgroup>
-      </div>
-    </div>
-    <div class="scroll-wrap flex-col">
-      <ul class="nav">
-        
-            <li class="waves-block waves-effect active">
-              <a href="/"  >
-                <i class="icon icon-lg icon-home"></i>
-                主页
-              </a>
-            </li>
-        
-            <li class="waves-block waves-effect">
-              <a href="/archives"  >
-                <i class="icon icon-lg icon-archives"></i>
-                Archives
-              </a>
-            </li>
-        
-            <li class="waves-block waves-effect">
-              <a href="/tags"  >
-                <i class="icon icon-lg icon-tags"></i>
-                Tags
-              </a>
-            </li>
-        
-      </ul>
-    </div>
-  </div>
-</aside>
-
-    <main id="main">
-        <header class="top-header" id="header">
-    <div class="flex-row">
-        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
-          <i class="icon icon-lg icon-navicon"></i>
-        </a>
-        <div class="flex-col header-title ellipsis">我的博客</div>
-        
-        <div class="search-wrap" id="search-wrap">
-            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
-                <i class="icon icon-lg icon-chevron-left"></i>
-            </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
-            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
-                <i class="icon icon-lg icon-search"></i>
-            </a>
-        </div>
-        
-        
-        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
-            <i class="icon icon-lg icon-share-alt"></i>
-        </a>
-        
-    </div>
-</header>
-<header class="content-header index-header">
-
-    <div class="container fade-scale">
-        <h1 class="title">我的博客</h1>
-        <h5 class="subtitle">
-            
-                一生挚爱妹子
-            
-        </h5>
-    </div>
-
-    
-
-
-</header>
-
-<div class="container body-wrap">
-
-    <ul class="post-list">
-    
-        <li class="post-list-item fade">
-            <article id="post-反向代理解决跨域"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2019-03-05 15:17:22" datetime="2019-03-05T07:17:22.000Z"  itemprop="datePublished">2019-03-05</time>
-
-        
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/nginx/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F/">反向代理解决跨域</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        <p>前段时间遇到一个前后端分离的项目，服务端代码在服务器上，而我不能直接把前端代码发布到服务器上。在调试时发现有跨域的问题，决定使用nginx反向代理来解决跨域问题。<br>修改conf/nginx.conf中的配置即可。修改后的配置如下：</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">    listen       80;</span><br><span class="line">    server_name  localhost;</span><br><span class="line"></span><br><span class="line">    location / &#123;</span><br><span class="line">        root   html;</span><br><span class="line">        # 修改默认进入的页面</span><br><span class="line">        index  login.html login.htm;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">   location /feasycom/ &#123;</span><br><span class="line">   		proxy_pass   https://**.**.***.*:****/;</span><br><span class="line">   &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>nginx启动后,自己的前端项目访问路径为：localhost/xxx.html。 服务端API调用路径为：localhost/feasycom/xxx</p>
-
-    
-
-        <a href="/nginx/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F/" class="post-more waves-effect waves-button">
-            阅读全文…
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Nginx/" rel="tag">Nginx</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-BLE蓝牙开发框架FastBLE的使用"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2019-03-05 14:46:49" datetime="2019-03-05T06:46:49.000Z"  itemprop="datePublished">2019-03-05</time>
-
-        
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/android/BLE%E8%93%9D%E7%89%99%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6FastBLE%E7%9A%84%E4%BD%BF%E7%94%A8/">BLE蓝牙开发框架FastBLE的使用</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        <p>首次使用android进行蓝牙BLE开发，在百度上查阅了大量资料，然后发现了FastBLE开源框架就决定试试，以下为在使用FastBLE开发的过程。<br>首先遇到的问题是权限问题，照着 开发文档上的获取权限的步骤来做，却发现无法获取到权限。在百度上查询了一些获取权限的资料都比较复杂，所以使用了AndroidACP开源框架来获取权限，具体步骤如下：</p>
-<ol>
-<li>在build.gradle文件下的dependencies中添加如下依赖</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">implementation <span class="string">'com.mylhyl:acp:1.2.0'</span></span><br></pre></td></tr></table></figure>
-<ol start="2">
-<li>在Activity中添加如下代码</li>
-</ol>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">Acp.getInstance(<span class="keyword">this</span>).request(<span class="keyword">new</span> AcpOptions.Builder()</span><br><span class="line">                .setPermissions(Manifest.permission.BLUETOOTH</span><br><span class="line">                        , Manifest.permission.BLUETOOTH_ADMIN</span><br><span class="line">                        , Manifest.permission.ACCESS_COARSE_LOCATION</span><br><span class="line">                        , Manifest.permission.ACCESS_FINE_LOCATION)</span><br><span class="line">                .build(),</span><br><span class="line">        <span class="keyword">new</span> AcpListener() &#123;</span><br><span class="line">            <span class="meta">@Override</span></span><br><span class="line">            <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onGranted</span><span class="params">()</span> </span>&#123;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="meta">@Override</span></span><br><span class="line">            <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onDenied</span><span class="params">(List&lt;String&gt; permissions)</span> </span>&#123;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br></pre></td></tr></table></figure>
-<p>setPermissions中的内容与 AndroidManifest.xml中添加权限所对应</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">uses-permission</span> <span class="attr">android:name</span>=<span class="string">"android.permission.BLUETOOTH"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">uses-permission</span> <span class="attr">android:name</span>=<span class="string">"android.permission.BLUETOOTH_ADMIN"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">uses-permission</span> <span class="attr">android:name</span>=<span class="string">"android.permission.ACCESS_COARSE_LOCATION"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">uses-permission</span> <span class="attr">android:name</span>=<span class="string">"android.permission.ACCESS_FINE_LOCATION"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>这样就获取权限成功了。然后FastBLE的使用，首先是导包，可以下载jar包导入或者使用maven，Gradle方式导入。然后再是初始化与设置扫描的配置，具体如下（还有其他配置没有设置，因为这些基本上已经够用了）：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">BleManager.getInstance().init(getApplication());</span><br><span class="line">        BleManager.getInstance()</span><br><span class="line">                .enableLog(<span class="keyword">true</span>)</span><br><span class="line">                .setReConnectCount(<span class="number">1</span>, <span class="number">5000</span>)</span><br><span class="line">                .setSplitWriteNum(<span class="number">20</span>)</span><br><span class="line">                .setConnectOverTime(<span class="number">10000</span>)</span><br><span class="line">                .setOperateTimeout(<span class="number">5000</span>);</span><br><span class="line">        <span class="comment">// BleManager.getInstance().enableBluetooth();</span></span><br><span class="line">        BleScanRuleConfig scanRuleConfig = <span class="keyword">new</span> BleScanRuleConfig.Builder()</span><br><span class="line">                .setScanTimeOut(<span class="number">10000</span>)              <span class="comment">// 扫描超时时间，可选，默认10秒；小于等于0表示不限制扫描时间</span></span><br><span class="line">                .build();</span><br><span class="line">        BleManager.getInstance().initScanRule(scanRuleConfig);</span><br></pre></td></tr></table></figure>
-<p>再就是扫描设备，因为业务需求的原因，我在开始扫描之前首先断开了所有的连接。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 断开所有连接</span></span><br><span class="line">BleManager.getInstance().disconnectAllDevice();</span><br><span class="line">BleManager.getInstance().scan(<span class="keyword">new</span> BleScanCallback() &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onScanFinished</span><span class="params">(List&lt;BleDevice&gt; list)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 扫描完成</span></span><br><span class="line">        button.setText(<span class="string">"开始扫描"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onScanStarted</span><span class="params">(<span class="keyword">boolean</span> b)</span> </span>&#123;</span><br><span class="line">        Log.i(TAG, <span class="string">"开始扫描"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onScanning</span><span class="params">(BleDevice bleDevice)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 扫描到一个之前没有扫到过的设备</span></span><br><span class="line">        <span class="keyword">if</span>(bleDevice.getName() != <span class="keyword">null</span>)&#123;</span><br><span class="line">            devices.add(bleDevice);</span><br><span class="line">            adapter.add(bleDevice);</span><br><span class="line">            listView.setAdapter(adapter);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<p>如果不需要再扫描，可以使用BleManager.getInstance().cancelScan()来中断扫描操作，这里需要注意的是，当执行中断扫描的方法后，会自动执行onScanFinished()方法，参数list是扫描出的所有设备。<br>然后是连接的步骤，连接有两种方式，一种是通过BleDevice来连接，另一种是通过Mac地址来连接。我这里使用的是第二种。使用ArrayAdapater与ListView来显示所有的扫描的设备，给LibeView监听事件，获取对应的设备的mac地址，然后使用BleManager.getInstance().connect()来连接，然后重写其中的方法。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">BleManager.getInstance().connect(devices.get(position).getMac(), <span class="keyword">new</span> BleGattCallback() &#123;</span><br><span class="line">    <span class="comment">// 开始连接</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onStartConnect</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        Log.e(TAG, <span class="string">"开始连接"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 连接失败</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onConnectFail</span><span class="params">(BleDevice bleDevice, BleException e)</span> </span>&#123;</span><br><span class="line">        Log.e(TAG, <span class="string">"连接不成功"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 连接成功并发现了服务</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onConnectSuccess</span><span class="params">(<span class="keyword">final</span> BleDevice bleDevice, BluetoothGatt gatt, <span class="keyword">int</span> status)</span> </span>&#123;</span><br><span class="line">        Log.e(TAG, <span class="string">"连接成功并发现服务。"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 连接断开</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onDisConnected</span><span class="params">(<span class="keyword">boolean</span> isActiveDisConnected, BleDevice bleDevice, BluetoothGatt gatt, <span class="keyword">int</span> status)</span> </span>&#123;</span><br><span class="line">        Log.e(TAG, <span class="string">"连接断开"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<p>在onConnectSuccess方法中有三个参数，最主要的是BluetoothGatt，BluetoothGatt 是BLE蓝牙开发的核心，通过BluetoothGatt 可以获取到uuid，然后通过uuid来打开通知(通知也有两种方式，看需要那种）。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line">List&lt;BluetoothGattService&gt; serviceList = gatt.getServices();</span><br><span class="line"><span class="keyword">for</span> (BluetoothGattService service : serviceList) &#123;</span><br><span class="line">    <span class="keyword">final</span> String uuid_service = service.getUuid().toString();</span><br><span class="line">    <span class="keyword">if</span>(uuid_service.contains(<span class="string">"fff0"</span>))&#123;</span><br><span class="line">        List&lt;BluetoothGattCharacteristic&gt; characteristicList = service.getCharacteristics();</span><br><span class="line">        <span class="keyword">for</span> (BluetoothGattCharacteristic characteristic : characteristicList) &#123;</span><br><span class="line">            <span class="keyword">final</span> String uuid_chara = characteristic.getUuid().toString();</span><br><span class="line">            <span class="keyword">if</span>(uuid_service.contains(<span class="string">"fff"</span>)) &#123;</span><br><span class="line">                <span class="keyword">try</span> &#123;</span><br><span class="line">                    Thread.sleep(<span class="number">100</span>);</span><br><span class="line">                &#125; <span class="keyword">catch</span> (InterruptedException e) &#123;</span><br><span class="line">                    e.printStackTrace();</span><br><span class="line">                &#125;</span><br><span class="line">                BleManager.getInstance().indicate(</span><br><span class="line">                        bleDevice,</span><br><span class="line">                        uuid_service,</span><br><span class="line">                        uuid_chara,</span><br><span class="line">                        <span class="keyword">new</span> BleIndicateCallback() &#123;</span><br><span class="line">                            <span class="meta">@Override</span></span><br><span class="line">                            <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onIndicateSuccess</span><span class="params">()</span> </span>&#123;</span><br><span class="line">                                <span class="comment">// 打开通知操作成功</span></span><br><span class="line">                                Log.e(<span class="string">"打开通知成功"</span>, <span class="string">"uuid_service : "</span> + uuid_service + <span class="string">" uuid_chara:  "</span> + uuid_chara);</span><br><span class="line">                                MyBleDevice uuid = <span class="keyword">new</span> MyBleDevice(devices.get(position), uuid_service, uuid_chara, uuid_chara.replace(<span class="string">"fff1"</span>,<span class="string">"fff2"</span>));</span><br><span class="line">                                uuids.add(uuid);</span><br><span class="line">                                read(uuid);</span><br><span class="line">                                <span class="keyword">try</span> &#123;</span><br><span class="line">                                    Thread.sleep(<span class="number">100</span>);</span><br><span class="line">                                &#125; <span class="keyword">catch</span> (InterruptedException e) &#123;</span><br><span class="line">                                    e.printStackTrace();</span><br><span class="line">                                &#125;</span><br><span class="line">                                write(<span class="string">"发送测试数据"</span>.getBytes(),uuid);</span><br><span class="line">                            &#125;</span><br><span class="line"></span><br><span class="line">                            <span class="meta">@Override</span></span><br><span class="line">                            <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onIndicateFailure</span><span class="params">(BleException exception)</span> </span>&#123;</span><br><span class="line">                                <span class="comment">// 打开通知操作失败</span></span><br><span class="line">                                Log.e(TAG, <span class="string">"打开通知失败"</span>);</span><br><span class="line">                            &#125;</span><br><span class="line">                            <span class="meta">@Override</span></span><br><span class="line">                            <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onCharacteristicChanged</span><span class="params">(<span class="keyword">byte</span>[] data)</span> </span>&#123;</span><br><span class="line">                                <span class="comment">// 打开通知后，设备发过来的数据将在这里出现</span></span><br><span class="line">                                Log.e(<span class="string">"接收到的数据"</span>, <span class="keyword">new</span> String(data));</span><br><span class="line">                            &#125;</span><br><span class="line">                        &#125;);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>可以在onIndicateSuccess()方法中进行保存对应的uuid_service与uuid_chara，然后通过BleDevice，uuid_service，uuid_chara就可以进行数据读写了。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 读取数据</span></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">read</span><span class="params">(MyBleDevice uuid)</span> </span>&#123;</span><br><span class="line">    BleManager.getInstance().read(</span><br><span class="line">            devices.get(position),</span><br><span class="line">            uuid.getUuid_service(),</span><br><span class="line">            uuid.getUuid_chara_rec(),</span><br><span class="line">            <span class="keyword">new</span> BleReadCallback() &#123;</span><br><span class="line">                <span class="meta">@Override</span></span><br><span class="line">                <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onReadSuccess</span><span class="params">(<span class="keyword">byte</span>[] data)</span> </span>&#123;</span><br><span class="line">                    Log.e(<span class="string">"读取特征值成功"</span>, data.length + <span class="string">""</span>);</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">                <span class="meta">@Override</span></span><br><span class="line">                <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onReadFailure</span><span class="params">(BleException exception)</span> </span>&#123;</span><br><span class="line">                    Log.e(<span class="string">"读取特征值失败"</span>, exception.toString());</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 写入数据</span></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">write</span><span class="params">(<span class="keyword">byte</span>[] data,MyBleDevice uuid)</span> </span>&#123;</span><br><span class="line">    BleManager.getInstance().write(</span><br><span class="line">            devices.get(position),</span><br><span class="line">            uuid.getUuid_service(),</span><br><span class="line">            uuid.getUuid_chara_send(),</span><br><span class="line">            data,</span><br><span class="line">            <span class="keyword">new</span> BleWriteCallback() &#123;</span><br><span class="line">                <span class="meta">@Override</span></span><br><span class="line">                <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onWriteSuccess</span><span class="params">(<span class="keyword">int</span> current, <span class="keyword">int</span> total, <span class="keyword">byte</span>[] justWrite)</span> </span>&#123;</span><br><span class="line">                    <span class="comment">// 发送数据到设备成功（分包发送的情况下，可以通过方法中返回的参数可以查看发送进度）</span></span><br><span class="line">                    Log.e(TAG, <span class="string">"发送数据到设备成功"</span>);</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">                <span class="meta">@Override</span></span><br><span class="line">                <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onWriteFailure</span><span class="params">(BleException exception)</span> </span>&#123;</span><br><span class="line">                    <span class="comment">// 发送数据到设备失败</span></span><br><span class="line">                    Log.e(TAG, <span class="string">"发送数据到设备成功"</span>);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;);</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>百度网盘下载链接：<a href="https://pan.baidu.com/s/15dDpzPMEXGD6Q5ejpr_fXA" target="_blank" rel="noopener">https://pan.baidu.com/s/15dDpzPMEXGD6Q5ejpr_fXA</a><br>提取码：jycs</p>
-
-    
-
-        <a href="/android/BLE%E8%93%9D%E7%89%99%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6FastBLE%E7%9A%84%E4%BD%BF%E7%94%A8/" class="post-more waves-effect waves-button">
-            阅读全文…
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/" rel="tag">Android</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-TCP通讯指定客户端接收数据的端口"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2019-01-01 15:27:45" datetime="2019-01-01T07:27:45.000Z"  itemprop="datePublished">2019-01-01</time>
-
-        
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/tcp/TCP%E9%80%9A%E8%AE%AF%E6%8C%87%E5%AE%9A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8E%A5%E6%94%B6%E6%95%B0%E6%8D%AE%E7%9A%84%E7%AB%AF%E5%8F%A3/">TCP通讯指定客户端接收数据的端口 Socket</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        <p>使用Socket实现TCP通讯时，服务端响应数据给客户端时，客户端接收数据的端口是随机的。如果想指定客户端接收数据的端口，那么可以在客户端创建Socket时使用如下API：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">socket = <span class="keyword">new</span> Socket(ip, serverPort,InetAddress.getByName(getLocalIpAddress()),clientPort);</span><br></pre></td></tr></table></figure>
-<p>getLocalIpAddress()为我自定义的获取本地ip的方法，也可以将这个方法替换成”192.168.0.123″(客户端的ip）即可。<br>而不是使用如下API创建Socket，该API生成的Socket中localPort为随机的。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">socket = <span class="keyword">new</span> Socket(ip, serverPort);</span><br></pre></td></tr></table></figure>
-    
-
-        <a href="/tcp/TCP%E9%80%9A%E8%AE%AF%E6%8C%87%E5%AE%9A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8E%A5%E6%94%B6%E6%95%B0%E6%8D%AE%E7%9A%84%E7%AB%AF%E5%8F%A3/" class="post-more waves-effect waves-button">
-            阅读全文…
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TCP/" rel="tag">TCP</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-    </ul>
-
-    
-
+<div id="box">
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<p></p>
 </div>
-
-        
-<footer class="footer">
-    <div class="top">
-        
-<p>
-    <span id="busuanzi_container_site_uv" style='display:none'>
-        站点总访客数：<span id="busuanzi_value_site_uv"></span>
-    </span>
-    <span id="busuanzi_container_site_pv" style='display:none'>
-        站点总访问量：<span id="busuanzi_value_site_pv"></span>
-    </span>
-</p>
-
-
-
-        <p>
-            
-                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
-            
-            <span>博客内容遵循 <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
-        </p>
-    </div>
-    <div class="bottom">
-        <p><span>廖义 &copy; 2019</span>
-            <span>
-                
-                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
-            </span>
-        </p>
-    </div>
-</footer>
-
-    </main>
-    <div class="mask" id="mask"></div>
-<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
-
-
-
-<div class="global-share" id="globalShare">
-    <ul class="reset share-icons">
-      <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.html.hb.com/&title=我的博客&pic=http://www.html.hb.com/img/avatar.jpg" data-title="微博">
-          <i class="icon icon-weibo"></i>
-        </a>
-      </li>
-      <li>
-        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
-          <i class="icon icon-weixin"></i>
-        </a>
-      </li>
-      <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.html.hb.com/&title=我的博客&source=一生挚爱妹子 砥砺前行 不忘初心" data-title=" QQ">
-          <i class="icon icon-qq"></i>
-        </a>
-      </li>
-      <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.html.hb.com/" data-title=" Facebook">
-          <i class="icon icon-facebook"></i>
-        </a>
-      </li>
-      <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=我的博客&url=http://www.html.hb.com/&via=http://www.html.hb.com" data-title=" Twitter">
-          <i class="icon icon-twitter"></i>
-        </a>
-      </li>
-      <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://www.html.hb.com/" data-title=" Google+">
-          <i class="icon icon-google-plus"></i>
-        </a>
-      </li>
-    </ul>
- </div>
-
-
-<div class="page-modal wx-share" id="wxShare">
-    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAAAAAAZai4+AAABYUlEQVR42u3aQQ6EMAhAUe9/aSdxNYlaP9AulN/VZKL2baQIbBte+7H+f5//OV9/vnLykiXrQ6x9uO42vnvCmEX2kiWrM4sEBfLyj/8he8mSJYscz4QiS5as1QFifEiT4CJLlqxK0sw/RPkxPyGXlyXrE6z6NrmgsKS+JUvWC1l7YfEtw0+WJasZK3cM85Ju9BqUj8uS9TkWaU9GGyfksH+4RpasxixStM0Vc0mZ6eKQliWrGSs6uJNrxkzIHWTJasAa31w5wqOpgCxZ3VgkKPDDmFMCH7SyZDVjRZslufG75e1MWbJeyyKvdy5F5sn3Q8SSJasNK1c2qgwJPTxflqw2rOQoAAgcvBlzESZkyWrGyiXT0ZQ6OoggS1ZPVnTYjmwzoZAkS1ZLVqWoVIlAqIwrS5asYIrMWzKyZMmqFG1zY0NRuixZPVl8rGd8Fw8EsmTJmlVIyjVHl8xHyJL1VtYPF281/fL40FwAAAAASUVORK5CYII=" alt="微信分享二维码">
-</div>
-
-
-
-
-    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
 <script>
-var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
+setTimeout(init,100);
+function init(){
+	var obox = document.getElementById('box'),
+		aDiv = obox.getElementsByTagName('div');
+		
+		for (var i = 0; i < aDiv.length; i++) {
+			aDiv[i].style.background = "url(images/"+(i+1)+".jpg) center/cover";
+			aDiv[i].style.transform = "rotateY("+(i*36)+"deg) translate3d(0,0,350px)";
+			aDiv[i].style.transition = "transform 1s "+(aDiv.length-i)*0.2+"s";
+		}
+	var sX,
+		sY,
+		nX,
+		nY,
+		desX = 0,
+		desY = 0,
+		tX = 0,
+		tY = 10,
+		index = 0;//滚轮初始值
+	document.onmousedown = function(e){
+		clearInterval(obox.timer);
+		e = e || window.event;
+		var sX = e.clientX,
+			sY = e.clientY;
+			this.onmousemove = function(e){
+				e = e || window.event;
+				var nX = e.clientX,
+					nY = e.clientY;
+					 // 当前点的坐标和前一点的坐标差值
+					desX = nX - sX;
+					desY = nY - sY;
+                    tX += desX*0.1; 
+                    tY += desY*0.1;
 
-
+					obox.style.transform = "rotateX("+(-tY)+"deg) rotateY("+tX+"deg)";
+					sX = nX;
+					sY = nY;
+			}
+			this.onmouseup = function(){
+				this.onmousemove = this.onmouseup = null;
+				obox.timer = setInterval(function(){
+					desX *= 0.95;
+					desY *= 0.95;
+					tX += desX*0.1;
+					tY += desY*0.1;
+					obox.style.transform = "rotateX("+(-tY)+"deg) rotateY("+tX+"deg)";
+					if (Math.abs(desX)<0.5 && Math.abs(desY)<0.5) {
+						clearInterval(obox.timer);
+					}
+				},13);
+			}
+		return false;
+	}
+	//滚轮放大缩小
+	mousewheel(document,function(e){
+		e = e || window.event;
+		var d = e.wheelDelta/120 || -e.detail/3;
+			if (d>0) {
+				index-=20;
+			}else{
+				index+=30;
+			}
+			(index<(-1050)&&(index=(-1050)));
+		document.body.style.perspective = 1000 + index + "px";
+	})
+	function mousewheel(obj,fn){
+		document.onmousewheel===null?obj.onmousewheel=fn:addEvent(obj,"DOMMouseScroll",fn)
+	}
+	function addEvent(obj,eName,fn){
+		obj.attachEvent?obj.attachEvent("on"+eName,fn):obj.addEventListener(eName,fn);
+	}
+}
 </script>
-
-<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
-
-
-<div class="search-panel" id="search-panel">
-    <ul class="search-result" id="search-result"></ul>
-</div>
-<template id="search-tpl">
-<li class="item">
-    <a href="{path}" class="waves-block waves-effect">
-        <div class="title ellipsis" title="{title}">{title}</div>
-        <div class="flex-row flex-middle">
-            <div class="tags ellipsis">
-                {tags}
-            </div>
-            <time class="flex-col time">{date}</time>
-        </div>
-    </a>
-</li>
-</template>
-
-<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
-
-
-
-
-
-
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-
-
-<script>
-(function() {
-    var OriginTitile = document.title, titleTime;
-    document.addEventListener('visibilitychange', function() {
-        if (document.hidden) {
-            document.title = '';
-            clearTimeout(titleTime);
-        } else {
-            document.title = '一生挚爱妹子';
-            titleTime = setTimeout(function() {
-                document.title = OriginTitile;
-            },2000);
-        }
-    });
-})();
-</script>
-
-
-
 </body>
 </html>
